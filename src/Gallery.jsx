@@ -91,7 +91,7 @@ function Gallery() {
         </p>
       </div>
 
-      <div className="gallery-container px-5 mt-5">
+      <div className="gallery-container px-5 mt-5 mb-4">
         {images.map((src, index) => (
           <div className="gallery-item" key={index}>
             <img src={src} alt={`PNC Gallery ${index + 1}`} loading="lazy" />

@@ -3,6 +3,7 @@
 
 body {
   padding-top: 89px;
+  
 }
 
 * {
@@ -160,6 +161,7 @@ body {
 /* Vission Mission */
 
 .mv-wrapper {
+  margin-top: -7px;
   min-height: 100vh;
   background: linear-gradient(135deg, #e6f4ec 0%, #f9fdf9 100%);
   display: flex;
@@ -275,15 +277,7 @@ body {
   }
 }
 
-/* FOOTER */
-.footer {
-  background-color: #0b5133!important;
-  color: #fff;
-}
 
-.footer a:hover {
-  color: #d4f0e1;
-}
 
 /* CONTACT PAGE */
 
@@ -398,6 +392,8 @@ body {
 }
 
 
+
+/* GALLERY */
 .photo-container .row {
   display: flex;          
   gap: 0;     
