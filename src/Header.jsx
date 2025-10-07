@@ -1,26 +1,30 @@
 import { NavLink } from "react-router-dom";
+import logo from "./images/logo.png";
 
 function Header() {
   return (
-    <div className="nav navbar navbar-expand-lg fixed-top justify-content-center px-5 py-4">
-      <NavLink className="navbar-brand mx-5" to="/home">
-        HOME
-      </NavLink>
+    <div className="nav navbar fixed-top py-2 px-5">
 
-      <NavLink className="navbar-brand mx-5" to="/mission-vision">
-        MISSION & VISION
-      </NavLink>
+      <img src={logo} alt="PNC Logo" />
 
-      <NavLink className="navbar-brand mx-5" to="/gallery">
-        GALLERY
-      </NavLink>
-
-      <NavLink className="navbar-brand mx-5" to="/about">
-        ABOUT
-      </NavLink>
-      <NavLink className="navbar-brand mx-5" to="/contact">
-        CONTACT
-      </NavLink>
+    
+      <div className="nav-links">
+        <NavLink className="navbar-brand" to="/">
+          HOME
+        </NavLink>
+        <NavLink className="navbar-brand" to="/mission-vision">
+          MISSION & VISION
+        </NavLink>
+        <NavLink className="navbar-brand" to="/gallery">
+          GALLERY
+        </NavLink>
+        <NavLink className="navbar-brand" to="/about">
+          ABOUT
+        </NavLink>
+        <NavLink className="navbar-brand" to="/contact">
+          CONTACT
+        </NavLink>
+      </div>
     </div>
   );
 }

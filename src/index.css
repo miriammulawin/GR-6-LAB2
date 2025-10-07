@@ -1,29 +1,143 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-    padding-top: 120px; 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+body {
+  padding-top: 89px;
 }
 
-/* MAG ADD KAYO NG COMMENT INDICATION KUNG ANONG SECTION YUNG STYLE NYO */
+* {
+  font-family: 'Inter';
+}
 
 /* HEADER */
-
 .nav {
-  background-color: #21885B;
-  margin-bottom: 200px;
+  background-color: white;
+  border-bottom: 1px solid #21885b22;
+  box-shadow: 2px 3px 5px #09312038;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
 }
 
-.nav a{
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav a {
   font-weight: bold;
-  color: white;
+  color: #126a44;
 }
 
-.nav a:hover{
-  color: #ffffffc1;
+.nav a:hover {
+  color: #21885B;
 }
+
 .nav a:active,
 .nav a:focus {
-  color: white !important;
+  color: #126a44 !important;
+  text-decoration: underline;
+}
+
+.nav img {
+  width: 20%;
 }
 
 /* HOME */
+.banner img {
+  width: 100%;
+  border-top: 1px solid #126a44;
+}
 
+.pnc-banner {
+  filter: blur(5px);
+}
+
+.banner h1 {
+  font-size: clamp(1rem, 6vw, 7rem);
+  line-height: 1.2;
+}
+
+.banner p {
+  font-size: clamp(0.5rem, 1.5vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  letter-spacing: 1px;
+  padding: 0 10%;
+}
+
+.banner .btn {
+  font-size: clamp(0.5rem, 1.2vw, 1rem);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #23855b;
+  color: white;
+}
+
+.overlay-text {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.title {
+  border: 1px 0 0 0 1px solid black;
+  color: #126a44;
+  font-weight: 700;
+  font-size: large;
+}
+
+
+.program-container img{
+
+  width: 60%;
+}
+.container h1 {
+  color: #0b5133;
+
+}
+
+.program .card-title {
+  font-size: 2.3rem;
+  color: #07482c;
+  letter-spacing: 3px;
+}
+
+
+.program .under-grad,
+.program .grad {
+  position: relative;
+  padding: 20px 0;
+  border-style: solid;
+  border-color: #0a3f28;
+  border-width: 5px 5px 5px 50px;
+  border-radius: 2%;
+  box-shadow: 0 4px 35px rgba(6, 81, 28, 0.25);
+  overflow: hidden;
+  background-color: #ffffff;
+  
+}
+
+
+.program .under-grad::before,
+.program .grad::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./images/pnc-logo.png"); /* replace with your actual path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  opacity: 0.08; /* faint watermark */
+
+}
+
+
+.program p {
+  font-weight: normal;
+  color: #082c1c;
+  font-family: 'Inter';
+  font-size: 1.1rem;
+}
