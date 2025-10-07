@@ -130,11 +130,11 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("./images/pnc-logo.png"); /* replace with your actual path */
+  background-image: url("./images/pnc-logo.png"); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
-  opacity: 0.08; /* faint watermark */
+  opacity: 0.08; 
 
 }
 
