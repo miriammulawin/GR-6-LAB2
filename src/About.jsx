@@ -1,6 +1,13 @@
 
 import "./index.css";
 import pnc from "./images/pnc.png";
+import je from "./images/je.jpg";
+import MIR from "./images/MIR.jpg";
+import rose from "./images/rose.jpg";
+import jaz from "./images/jaz.jpg";
+import mj from "./images/mj.jpg";
+import jii from "./images/jii.jpg";
+import jc from "./images/jc.jpg";
 
 function About() {
   return (
@@ -12,6 +19,7 @@ function About() {
         <div className="members-con">
           <div className="member-card">
             <h5>Miriam Mulawin</h5>
+          <img src={MIR} alt="" className="profile-pic"/>
             <p>
               <em>
                 "A dedicated IT student who believes that every line of code
@@ -26,6 +34,7 @@ function About() {
 
           <div className="member-card">
             <h5>Rose Bren Dungo</h5>
+          <img src={rose} alt="" className="profile-pic"/>
             <p>
               <em>
                 "A determined IT student preparing to be part of the digital
@@ -40,6 +49,7 @@ function About() {
 
           <div className="member-card">
             <h5>Jazmine Cruz</h5>
+          <img src={jaz} alt="" className="profile-pic "/>
             <p>
               <em>
                 "An IT student who sees technology as a tool to turn small ideas
@@ -54,6 +64,7 @@ function About() {
 
           <div className="member-card">
             <h5>Maryje Clasin</h5>
+          <img src={je} alt="" className="profile-pic" />
             <p>
               <em>
                 "Information Technology turns imagination into innovation,
@@ -68,6 +79,7 @@ function About() {
 
           <div className="member-card">
             <h5>Michael Velasquez</h5>
+          <img src= {mj} alt="" className="profile-pic" />
             <p>
               <em>
                 "As both an artist and IT student, I am passionate about
@@ -83,6 +95,7 @@ function About() {
 
           <div className="member-card">
             <h5>Jehus Cabalejo</h5>
+          <img src={jii} alt="" className="profile-pic " />
             <p>
               <em>
                 "As an IT student, I'm defining my future with every line of
@@ -97,6 +110,7 @@ function About() {
 
           <div className="member-card">
             <h5>Jesus Cenido</h5>
+          <img src={jc} alt="" className="profile-pic" />
             <p>
               <em>
                 "As an IT student, I'm defining my future with every line of
