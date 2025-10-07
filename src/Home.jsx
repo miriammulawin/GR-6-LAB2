@@ -170,15 +170,7 @@ function Home() {
       </div>
 
 
-      <footer className="footer  text-white py-3 mt-5">
-        <div className="container text-center">
-     
-          <h5 className="fw-bold mt-3">Pamantasan ng Cabuyao</h5>
-          <p className="small ">
-            Brgy. Banay-Banay, City of Cabuyao, Laguna, Philippines
-          </p>
-        </div>
-      </footer>
+
     </>
   );
 }
