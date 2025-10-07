@@ -5,7 +5,7 @@ import CAS from "./images/CAS.png";
 import COED from "./images/COED.png";
 import COE from "./images/COE.png";
 import CCS from "./images/CCS.png";
-import CBAA from "./images/CBAA.png";
+import CBAA from "./images/CBAA1.png";
 
 function Home() {
   return (
@@ -24,8 +24,7 @@ function Home() {
 
       <div className="program-container mt-3">
         <div className="container text-center">
-          <img src={p} alt=""
-          className="py-3" />
+          <img src={p} alt="" className="py-3" />
           <hr />
           <h1 className="fw-bold mb-2 mt-5">Discover Our Programs</h1>
           <p className="mb-5 text-muted">
@@ -88,86 +87,79 @@ function Home() {
         <hr />
       </div>
 
-
-      {/* Colleges section */}
-
-      <div className="department py-5 mt-5 ">
+      <div className="department py-5  ">
         <div className="container text-center">
-          <h1>College Departments</h1>
+          <h1 className="fw-bold mb-3">College Departments</h1>
+          <p className="mb-5 text-muted">
+            Our college departments are committed to providing quality education
+            and fostering innovation across diverse fields of study.
+          </p>
 
           <div className="row g-4 mt-5">
             <div className="col-md-4">
               <div className="card h-100 shadow-sm text-center">
-                <div className="card-body text-start">
-                  <h5 className="card-title text-center">CHAS</h5>
-                
-                  <p className="card-text">
-                    We build modern, responsive, and user-friendly websites
-                    tailored to your needs.
-                  </p>
+                <div className="card-body">
+                  <img src={CCS} alt="" />
+                  <h5 className="card-title text-center mt-3 px-5 fw-bold">
+                    College of Computing Studies
+                  </h5>
                 </div>
               </div>
             </div>
 
             <div className="col-md-4">
               <div className="card h-100 shadow-sm text-center">
-                <div className="card-body text-start">
-                  <h5 className="card-title text-center">CBAA</h5>
-                  <p className="card-text">
-                    Custom mobile applications for Android and iOS with smooth
-                    user experience.
-                  </p>
+                <div className="card-body">
+                  <img src={CBAA} alt="" />
+                  <h5 className="card-title text-center mt-3 fw-bold">
+                    College of Business, Accountancy and Administration
+                  </h5>
                 </div>
               </div>
             </div>
 
             <div className="col-md-4">
               <div className="card h-100 shadow-sm text-center">
-                <div className="card-body text-start">
-                  <h5 className="card-title text-center">COED</h5>
-                  <p className="card-text">
-                    From consulting to deployment, we provide end-to-end IT
-                    solutions for businesses.
-                  </p>
+                <div className="card-body">
+                  <img src={COED} alt="" />
+                  <h5 className="card-title text-center mt-3 fw-bold">
+                    College of Education
+                  </h5>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Second row */}
           <div className="row g-4 mt-3">
             <div className="col-md-4">
               <div className="card h-100 shadow-sm text-center">
-                <div className="card-body text-start">
-                  <h5 className="card-title text-center">CAS</h5>
-                  <p className="card-text">
-                    We build modern, responsive, and user-friendly websites
-                    tailored to your needs.
-                  </p>
+                <div className="card-body">
+                  <img src={CAS} alt="" />
+                  <h5 className="card-title text-center mt-3 fw-bold">
+                    College of Arts and Science
+                  </h5>
                 </div>
               </div>
             </div>
 
             <div className="col-md-4">
               <div className="card h-100 shadow-sm text-center">
-                <div className="card-body text-start">
-                  <h5 className="card-title text-center">COE</h5>
-                  <p className="card-text">
-                    Custom mobile applications for Android and iOS with smooth
-                    user experience.
-                  </p>
+                <div className="card-body">
+                  <img src={CHAS} alt="" />
+                  <h5 className="card-title text-center mt-3 px-5 fw-bold">
+                    College of Health and Allied Science
+                  </h5>
                 </div>
               </div>
             </div>
 
             <div className="col-md-4">
               <div className="card h-100 shadow-sm text-center">
-                <div className="card-body text-start">
-                  <h5 className="card-title text-center">CCS</h5>
-                  <p className="card-text">
-                    From consulting to deployment, we provide end-to-end IT
-                    solutions for businesses.
-                  </p>
+                <div className="card-body">
+                  <img src={COE} alt="" />
+                  <h5 className="card-title text-center mt-3 fw-bold">
+                    College of Engineering
+                  </h5>
                 </div>
               </div>
             </div>
@@ -176,6 +168,17 @@ function Home() {
           <br />
         </div>
       </div>
+
+
+      <footer className="footer  text-white py-3 mt-5">
+        <div className="container text-center">
+     
+          <h5 className="fw-bold mt-3">Pamantasan ng Cabuyao</h5>
+          <p className="small ">
+            Brgy. Banay-Banay, City of Cabuyao, Laguna, Philippines
+          </p>
+        </div>
+      </footer>
     </>
   );
 }

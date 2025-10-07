@@ -27,7 +27,7 @@ body {
 
 .nav a {
   font-weight: bold;
-  color: #126a44;
+  color: #0b5133;
 }
 
 .nav a:hover {
@@ -68,6 +68,7 @@ body {
 }
 
 .banner .btn {
+  margin-top: 10px;
   font-size: clamp(0.5rem, 1.2vw, 1rem);
   padding: 10px 20px;
   border-radius: 10px;
@@ -75,6 +76,9 @@ body {
   color: white;
 }
 
+.banner .btn:hover{
+  border: 1px solid white;
+}
 .overlay-text {
   width: 90%;
   max-width: 800px;
@@ -142,6 +146,28 @@ body {
   font-size: 1.1rem;
 }
 
+.card{
+  border: 1px solid #0b513339 !important;
+}
+.card img{
+  width: 80%;
+}
+
+.card-body{
+  margin: 10px 0 10px 0px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #0b5133!important;
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #d4f0e1;
+}
+
+
 
 
 /* CONTACT PAGE */
@@ -162,6 +188,7 @@ body {
   width: 100%;
   max-width: 900px;
   overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.204);
 }
 
 .contact-header {
@@ -237,15 +264,15 @@ body {
 
 .contact-info {
   flex: 1 1 250px;
-  background-color: #f8fdf9;
-  border-left: 4px solid #21885b;
+  background-color: #f8fefa;
+  border-left: 10px solid #21885B;
   border-radius: 8px;
   padding: 20px;
   box-sizing: border-box;
 }
 
 .contact-info h3 {
-  color: #21885b;
+  color: #0b5133;
   margin-bottom: 10px;
 }
 
@@ -255,41 +282,6 @@ body {
   line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .contact-content {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .contact-form,
-  .contact-info {
-    flex: 1 1 100%;
-  }
-
-  .contact-header h1 {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 576px) {
-  .contact-header h1 {
-    font-size: 22px;
-  }
-
-  .contact-header p {
-    font-size: 14px;
-  }
-
-  .contact-form button {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .contact-box {
-    margin: 10px;
-  }
-}
 
 
 
