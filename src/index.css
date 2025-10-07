@@ -157,6 +157,124 @@ body {
   margin: 10px 0 10px 0px;
 }
 
+/* Vission Mission */
+
+.mv-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e6f4ec 0%, #f9fdf9 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 70px 20px;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  animation: fadePage 1s ease-in-out;
+}
+
+.mv-header {
+  text-align: center;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, #217346, #3da76b);
+  padding: 40px 60px;
+  border-radius: 25px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+
+.mv-header:hover {
+  transform: translateY(-5px);
+}
+
+.mv-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.mv-header p {
+  font-size: 18px;
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.mv-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.mv-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 40px 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(33, 115, 70, 0.2);
+  transition: all 0.4s ease;
+  text-align: justify;
+  position: relative;
+  overflow: hidden;
+}
+
+.mv-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(33, 115, 70, 0.05),
+    rgba(33, 115, 70, 0.15),
+    rgba(33, 115, 70, 0.05)
+  );
+  transform: skewX(-25deg);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.mv-card:hover::before {
+  opacity: 1;
+}
+
+.mv-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.mv-card h2 {
+  color: #217346;
+  font-size: 26px;
+  font-weight: 700;
+  border-left: 5px solid #217346;
+  padding-left: 15px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mv-card p {
+  color: #2d2d2d;
+  font-size: 18px;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+}
+
+@keyframes fadePage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* FOOTER */
 .footer {
   background-color: #0b5133!important;
@@ -280,59 +398,69 @@ body {
 }
 
 
+.photo-container .row {
+  display: flex;          
+  gap: 0;     
+              
+}
 
 
-/* ===================== */
-/* GALLERY PAGE STYLES   */
-/* ===================== */
+
+.photo img {
+  width: 100%;
+  height: 100%;           
+  object-fit: cover;     
+}
+
+.caption.card {
+  border-radius: 0 !important;
+  background-color: #f7fffc;
+  text-align: justify;
+  line-height: 1.6;
+  font-weight: 800px;
+}
+
+.photo{
+  width: 100%;
+}
+
+.gallery img{
+  width: 50%;
+}
+
+.gallery h1{
+    color: #0b5133;
+}
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 40px 20px;
-  background-color: #f4f8f5;
-  min-height: 100vh;
-  box-sizing: border-box;
+  gap: 2rem; 
 }
+
 .gallery-item {
-  flex: 1 1 calc(27% - 20px);
-  max-width: 27%;
-  overflow: hidden;
-  border: 5px solid #555;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 250px;              
+  border: 2px solid #082c1c7b;   
+  border-radius: 10px;          
+  overflow: hidden;              
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;     
 }
-/* HOVER EFFECT */
-.gallery-item:hover {
-  transform: scale(1.06);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  border-color: #333;
-  border-radius: 10px;
-}
-/* BASE IMAGE */
+
 .gallery-item img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 400px;
   object-fit: cover;
 }
-/* ====================== */
-/* RESPONSIVE MEDIA */
-@media (max-width: 992px) {
-  .gallery-item {
-    flex: 1 1 calc(40% - 20px);
-    max-width: 40%;
-  }
+
+.gallery-item:hover {
+  transform: scale(1.03);
 }
-@media (max-width: 600px) {
-  .gallery-item {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
+
+
+
+
+
 
 /* About Page */
 .tex {
