@@ -5,7 +5,7 @@ import Home from './Home.jsx'
 import MissionVision from './Mission_Vision.jsx'
 import Gallery from './Gallery.jsx'
 import Contact from './Contact.jsx'
-import About from './ABout.jsx'
+import About from './About.jsx'
 import { Route, Routes } from 'react-router-dom'
 function App() {
   return (
